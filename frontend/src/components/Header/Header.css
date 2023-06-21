@@ -1,0 +1,12 @@
+.utk-logo--white {
+	fill: #ffffff;
+}
+
+.utk-logo--orange {
+	fill: #ff8200;
+}
+
+nav {
+    border-top-color: #ff8200;
+    border-top-width: 1ch;
+}

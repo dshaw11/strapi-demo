@@ -8,8 +8,6 @@ export default function Homepage() {
     const { loading, error, data } = useFetch('http://localhost:3001/api/reviews');
 
 
-    console.log(data.data);
-
     if (loading) {
         return (
             <h1>Loading</h1>
@@ -19,13 +17,13 @@ export default function Homepage() {
 
 
     return (
-        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-8 ">
             {data.data.map(review => (
 
                 <Card key={review.id}
                     title={review.attributes.title}
                     rating={review.attributes.rating}
-                    body={review.attributes.body}
+                    // body={review.attributes.body}
                     published={review.attributes.publishedAt}
                     id={review.id}
                  />

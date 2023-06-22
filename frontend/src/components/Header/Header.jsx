@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './Header.css';
 
-const Header = () => {
+export default function Header() {
 
     return (
         <nav className="relative flex w-full flex-wrap items-center justify-between bg-neutral-100 py02 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-2">
@@ -21,9 +22,9 @@ const Header = () => {
                         </svg>
                     </li>
                     <li>
-                        <a class="text-xl text-neutral-800 dark:text-neutral-200" href="/">
+                        <Link to="/" className="text-xl text-neutral-800 dark:text-neutral-200" >
                             UTK Libraries
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <div className="relative flex items-center">
@@ -36,4 +37,3 @@ const Header = () => {
     )
 }
 
-export default Header;

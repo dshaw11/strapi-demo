@@ -1,0 +1,13 @@
+.utk-orange{
+    color: #ff8200;
+    /* background-color: #ff8200; */
+}
+a:hover {
+    color: black;
+}
+.rating {
+    text-align: center;
+    color: #ff8200;
+    font-size:25px;
+    font-weight: bold;
+}

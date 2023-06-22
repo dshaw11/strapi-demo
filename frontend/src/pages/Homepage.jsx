@@ -23,7 +23,7 @@ export default function Homepage() {
                 <Card key={review.id}
                     title={review.attributes.title}
                     rating={review.attributes.rating}
-                    // body={review.attributes.body}
+                    body={review.attributes.body.substring(0, 120)}
                     published={review.attributes.publishedAt}
                     id={review.id}
                  />
